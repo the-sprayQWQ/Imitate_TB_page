@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* em i 不傾斜 */
+
+em,
+i {
+    font-style: normal
+}
+
+
+/* 去掉li前面的小圆点 */
+
+li {
+    list-style: none
+}
+
+img {
+    /* 照顾浏览器兼容性 */
+    border: 0;
+    /* 去掉所有图片下边框缝隙 */
+    vertical-align: middle
+}
+
+button {
+    /* 鼠标经过按钮鼠标换成小手 */
+    cursor: pointer
+}
+
+a {
+    /* 所有链接换颜色和下划线 */
+    color: #666;
+    text-decoration: none
+}
+
+a:hover {
+    color: #f22e00;
+}
+
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    border: 0;
+    outline: none;
+}
+
+body {
+    /* 抗锯齿性让文字更加清晰的显示CSS3属性 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #f4f4f4;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #3c3c3c;
+}
+
+.hide,
+.none {
+    display: none
+}
+
+
+/* 清除浮动 */
+
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
